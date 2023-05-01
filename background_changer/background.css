@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Be+Vietnam+Pro:wght@300;400&family=Didact+Gothic&family=Dongle:wght@300;400;700&family=Exo&family=Nunito:ital,wght@0,700;0,800;1,700&family=Poppins:wght@300;400&family=Quicksand:wght@300&family=Space+Grotesk:wght@300;400&family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1rem;
+}
+
+.header{
+    color:black;
+    background:linear-gradient(lightblue,white);
+    
+}
+
+.header .nav-items{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+
+
+/* Section-1 */
+
+
+.section-1{
+    margin-top: 20px;
+    
+    height: 100vh;
+}
+
+.section-1-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+
+.section-1-main-div-1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+
+.section-1-main-div-1 button{
+    align-self: center;
+    padding: 5px;
+    width: 100px;
+    text-align: start;
+    border-radius: 10px;
+    border: none;
+}
+
+

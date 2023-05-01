@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VACATION 2023</title>
+    <link rel="stylesheet" href="project3.css">
+    <script src="project3.js" defer></script>
+</head>
+<body>
+    
+    <header class="header">
+        
+        <div class="header-main">
+            
+            <div class="header-main-div-1">
+                <h1> Vacation Destinations Wish List</h1>
+                <p>Found execting places to visi on your next vacation? Use the form below to add them to your with list.</p>
+            </div>
+
+        </div>
+    
+    </header>
+
+    <main>
+        <section class="section-1">
+            
+            <div class="section-1-main">
+                
+                <div class="section-1-main-div-1">
+
+                    <form class="submission-form">
+
+                        <label for = 'name' > Destination Name</label>
+                        <input type="text" name="name" id="name" placeholder="Provide a name for the destination" required>
+
+
+                        <label for = 'location' > Destination Location</label>
+                        <input type="text" name="location" id="location" placeholder="Where is this destination located" required>
+
+                        <label for = 'photo' >Photo</label>
+                        <input type="url" id="photo" name="photo" placeholder="Provide a URL for a photo" required>
+
+                        <label for = 'description' > Destination Description</label>
+                        <input type="text" id="description" name="description"
+                        placeholder="Describe the destination" required>
+
+                        <input type="submit" class="submit">
+                    </form>
+                </div>
+
+                <div class="section-1-main-div-2">
+                    <p class='section-1-main-div-2-h2-title'>My Wish List</p>
+                    <div class="destination-image-div">
+                        <img src="https://images.unsplash.com/photo-1680458842171-6dbeced420f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="destination-image" alt="destination-image">
+                    </div>
+
+                    <p class="destination-name">Destination-name</p>
+                    <p class="destination-location">Destination-location</p>
+                    <p class="destination-description">Description</p>
+
+
+                </div>
+            
+            </div>
+
+        </section>
+        
+    </main>
+
+
+</body>
+</html>

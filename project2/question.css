@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;0,800;1,700&family=Quicksand:wght@300&display=swap');
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+
+}
+
+
+body{
+    background-color: yellow;
+}
+
+
+
+
+.question{
+
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.question .question-main{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 500px;
+    height: 500px;
+    
+    padding: 10px;
+    justify-content: center;
+}
+
+.question .question-main-div-1 h1{
+    text-align: center;
+}
+
+.question .question-main .question-main-div-2 form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+
+
+.question .question-main-div-2 input[type="text"]{
+    border: 2px solid black;
+    font-size: 20px;
+    height: 50px;
+    font-weight: 900;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.question .question-main-div-2 input[type="button"]{
+    display: inline-block;
+    align-self: center;
+    padding: 10px;
+    
+}
+
+
+.answer{
+    text-align: center;
+    color:green;
+}
