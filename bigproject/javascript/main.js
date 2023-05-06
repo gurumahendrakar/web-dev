@@ -149,7 +149,23 @@
 
 
 
+const open_menu = document.querySelector('.open-menu-btn');
+
+
+const nav_menu = $(' nav .nav__menu');
+
+
 const nav = document.querySelector('nav');
+
+
+window.addEventListener('resize',function(){
+  if (this.window.innerWidth>635){
+    nav_menu.css('display','none')
+    this.window.location.reload(true)
+
+    
+  }
+})
 
 
 
@@ -172,6 +188,7 @@ button.forEach(function(button){
     let article_div = (this.parentNode.parentNode.classList[1])
     main_div = $(`.${article_div}`)
     main_div_article = $(`.${article_div} article`)
+    console.log(this);
     let opposite_div = null;
     
 
@@ -190,32 +207,100 @@ button.forEach(function(button){
       
     }
 
-    
-    
-
-    if (main_div_article.css('display')=='block'){
-      main_div_article.css('display','none')
-      opposite_div.css('height','100%')
 
 
-    }else{
 
-      if (main_div.css('height')=='100px'){
-        main_div.css('height','100%')
-        
+    if (main_div_article.css('display')=="none"){
+
+      main_div.css('height','100%')
+      main_div_article.css('display','block')
+      this.innerHTML = '<i class="fa-solid fa-minus" style="color: #ffffff;"></i>'
+
+
+      
+      if (opposite_div_article.css('display')=='none'){
+        opposite_div.css('height','80px')
+       
+      
+      }else{
+        opposite_div.css('height','100%')
       }
 
-      main_div_article.css('display','block')
-      
-
-      if (opposite_div_article.css('display')=='block'){
-        opposite_div.css('height','100%')
-        
-      }else{
-        opposite_div.css('height','100px')
-      
+    
+    
+    }else{
+      main_div_article.css('display',"none")
+      this.innerHTML = '<i class="fa-solid fa-plus" style="color:white;"></i>'
+      main_div.css('height','100%')
+      opposite_div.css('height','100%')
     }
-
-}})
+})
 
 })
+
+
+
+
+
+
+
+
+open_menu.addEventListener('click',function(){
+  (nav_menu.css('display'))
+  
+  
+  if (nav_menu.css('display')=='block'){
+    open_menu.innerHTML = '<i class="fa-solid fa-bars fa-1xl" style="color: #fffcfc;width: 50px;"></i>'
+    nav_menu.css('display','none')
+    nav_menu.css('width','0vw')
+    
+
+  }else{
+    nav_menu.css('display','block')
+    nav_menu.css('width','50vw')
+    open_menu.innerHTML = '<i class="fa-solid fa-xmark fa-1xl" style="color:#ffffff; width:50px"></i>'
+    
+    $('.mobile__nav__h2').css('display','block')
+   
+    
+    
+  }
+  
+})
+
+
+
+
+
+const clicking_buttons = document.querySelectorAll('.change__container > button');
+const design_button = document.querySelectorAll('.design__container >  button');
+const student = document.querySelectorAll('.student');
+
+
+
+clicking_buttons.forEach(function(button){
+  button.addEventListener('click',function(){
+
+    for (let divv of student){
+      if ($(divv).css('display')=='flex'){
+        ($(divv).css('display','none'))
+    }
+  }
+
+    
+
+    $((`.scroll-${button.classList[0][button.classList[0].length-1]}`)).css('display','flex')
+
+
+
+    document.querySelector(` .design__container  > .${button.classList[0]}`).style.border = "3px solid #6c63ff"
+    
+    setTimeout(function(){
+      document.querySelector(` .design__container  > .${button.classList[0]}`).style.border = "none"
+    },500)
+  })
+
+})
+
+
+
