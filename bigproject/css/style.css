@@ -533,6 +533,7 @@ footer{
     min-height: 50vh;
     justify-content: center;
     align-items: center;
+    
 }
 
 .footer__container h2{
@@ -546,7 +547,6 @@ footer{
 .footer__container{
     display: flex;
    padding: 50px 0px 50px;
-    min-height: 50vh;
     
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -647,7 +647,7 @@ footer{
 
 
 
-@media (max-width:635px){
+@media (max-width:700px){
     .header__left p{
         display: none;
     }
@@ -711,7 +711,10 @@ footer{
         
     }
 
-    
+      
+
+       
+
     .nav__menu li{
         padding: 20px;
     }
@@ -813,3 +816,9 @@ footer{
 
 
 
+
+
+
+.footer__symbol__links{
+    margin-top: 30px;
+}

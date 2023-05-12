@@ -258,6 +258,10 @@ open_menu.addEventListener('click',function(){
   }else{
     nav_menu.css('display','block')
     nav_menu.css('width','50vw')
+    for (let child of document.querySelectorAll('.nav__menu li')){
+      child.style.transform = "rotate(0deg)"
+    }
+
     open_menu.innerHTML = '<i class="fa-solid fa-xmark fa-1xl" style="color:#ffffff; width:50px"></i>'
     
     $('.mobile__nav__h2').css('display','block')
@@ -301,6 +305,8 @@ clicking_buttons.forEach(function(button){
   })
 
 })
+
+
 
 
 
