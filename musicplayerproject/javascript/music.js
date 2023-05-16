@@ -14,7 +14,7 @@ class songpaths{
 
         this.songs__paragraph__names = document.querySelectorAll('.songs__container .song__name__div p');
         this.song_duration_tag = document.querySelectorAll('.songs__container .duration__playbutton p')
-        this.all_audio = document.querySelectorAll('audio');
+        this.all_audio = document.querySelectorAll('.section__5 audio');
         this.song_duration = document.querySelector('.song__duration');
         
         this.ran = document.querySelector('input[type="range"]');

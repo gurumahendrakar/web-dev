@@ -1,0 +1,10 @@
+online code editor jquery 
+real time video processing useing chroma key (greenscreen effect)
+instargram automation
+sorting visualizer 
+oneline code editor (reaqct)
+stock visulation - forecasting dashboard using dash 
+our App - a  social media web app in node js
+amazone clone 
+custormer relationship manager 
+whatsapp web clone 

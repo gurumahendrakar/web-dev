@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tictoe</title>
+
+   
+    <link rel="stylesheet" href="./tictoe.css">
+    <link rel="stylesheet" href="../musicplayerproject/css/music.css">
+    <script src="https://kit.fontawesome.com/a37a67bff9.js" crossorigin="anonymous"></script>
+    <script src="../tictoe/tictoe.js"  defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../musicplayerproject/javascript/music.js" defer></script>
+
+
+</head>
+<body>
+
+
+    <main>
+        <section class="section_1">
+           
+            <div class="boxes__container">
+                <h2>Tic Tac Toe</h2>
+
+                <div class="box__top">
+                    
+                    <div>
+                        <button class=" box box__1"></button>
+                    </div>
+                    
+                    <div>
+                        <button class=" box box__2"></button>
+                    </div>
+
+                    <div>
+                        <button class=" box box__3"></button>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="box__middle">
+                    
+                    <div>
+                        <button class=" box box__4"></button>
+                    </div>
+                    
+                    <div>
+                        <button class=" box box__5"></button>
+                    </div>
+
+                    <div>
+                        <button class=" box box__6"></button>
+                    </div>
+                    
+                </div>
+
+
+                <div class="box__bottom">
+                    <div>
+                        <button class=" box box__7"></button>
+                    </div>
+                    
+                    <div>
+                        <button class=" box box__8"></button>
+                    </div>
+
+                    <div>
+                        <button class=" box box__9"></button>
+                    </div>
+                    
+                </div>
+
+                
+                <div class="winning__player">
+                    
+                    <h4>x Wonned❤️</h4>
+                </div>
+            
+            </div>   
+
+
+            
+        </section>
+
+
+        <section class="section__1">
+                
+                
+            <div class=" container music__top__container">
+
+                <div class="music__top">
+                    
+                    <div class="playing__numberr">
+                        <p class="playing__number">Playing music 1 of 6 </p>
+                    </div>
+                    
+                    <div class="playing__image">
+                        <img src="./images/rahuljain.jpeg" alt="rahul__jain__image">
+                    </div>
+
+                    <div class="playing__song">
+                        <p>Dholna</p>
+                    </div>
+
+                    <div class="playing__singer">
+                        <p>Dholna, Rahul Jain</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="section__2">
+        
+            <div class="container music__middle__container">
+                <p class="song__duration">Not Played</p>
+                <div class=" playing__duration">
+                
+                    <form>
+                        <input type="range" value="0">
+                    </form>
+
+                </div>
+
+
+                <div class="volume__increase">
+                    <span class="decrease__volume"><i class="fa-solid fa-volume-off" style="color: #000000;"></i></span>
+
+                    <form>
+                        <input type="range" min="0" max="1" step="0.1" value="1">
+                    </form>
+                    
+                    <span class="increase__volume"><i class="fa-solid fa-volume-high" style="color: #000000;"></i></span>
+                
+                </div>
+          
+            </div>
+        
+        </section>
+
+
+        <section class="section__3">
+            <div class=" container music__bottom__container">
+
+                <div class="song__autoplaying">
+                    <button class="auto_playing"><span class="autoplaying__button"><i class="fa-solid fa-repeat fa-2xl" style="color: #000000;"></i></span></button>
+                </div>
+
+
+                <div class="song__backward">
+                    <button class="backward"><span class="backward__button"><i class="fa-solid fa-backward fa-2xl" style="color: #000000;"></i></span></button>
+                </div>
+
+
+                <div class="song__play">
+                    <button class="play"><span class="play__button"><i class="fa-solid fa-circle-play fa-2xl" style="color: #000000;"></i></span></button>
+                </div>
+
+                <div class="song__pause">
+                    <button class="pause"><span class="pause__button"><i class="fa-solid fa-circle-pause fa-2xl" style="color: #000000;"></i></span></button>
+                    
+
+                </div>
+
+                <div class="song__forward">
+                    <button class="forward"><span class="forward__button">
+                        <i class="fa-solid fa-forward fa-2xl" style="color: #000000;"></i>
+                    </span></button>
+                </div>
+
+                <div class="song__repeat">
+                    <button class="repeat"><span class="repeat__button"><i class="fa-solid fa-rotate-left fa-2xl" style="color: #000000;"></i></span></button>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section class="section__4">
+
+            <div class="container audio__visulation__div">
+                <img src="./images/stoped.gif" alt="audio__visulation" class="audio__visulation">
+            </div>
+
+        </section>
+
+
+
+        <section class="section__5">
+            <div class=" container songs__container">
+
+                <div class="song1__div">
+                    <div class="song__image">
+                        <img src="./images/rahuljain.jpeg">
+                    </div>
+                    
+                    <audio id="song_1">
+                        <source src="./songs/song__1.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                    <div class="song__name__div">
+                        <p class="song__name">Dholna</p>
+                    </div>
+                    
+                    <div class="duration__playbutton">
+                        <p>5.33</p>
+                        <button  class="song__button__1"><span class="play__button"><i class="fa-solid fa-circle-play fa-2xl" style="color: #000000;"></i></span></button>
+                    </div>
+                    
+                </div>
+
+
+
+                <div class="song2__div">
+                    <div class="song__image">
+                        <img src="./images/rahuljain.jpeg">
+                    </div>
+                    
+                    <audio id="song_2">
+                        <source src="./songs/song__2.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                    <div class="song__name__div">
+                        <p class="song__name">Sea Lona</p>
+                    </div>
+                    
+                    <div class="duration__playbutton">
+                        <p class="duration">5.33</p>
+                        <button class="song__button__2"><span class="play__button"><i class="fa-solid fa-circle-play fa-2xl" style="color: #000000;"></i></span></button>
+                    </div>
+                    
+                </div>
+
+
+
+                <div class="song3__div">
+                    <div class="song__image">
+                        <img src="./images/rahuljain.jpeg">
+                    </div>
+                    
+                    <audio id="song_3">
+                        <source src="./songs/song__3.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                    <div class="song__name__div">
+                        <p class="song__name">Jeans Beans</p>
+                    </div>
+                    
+                    <div class="duration__playbutton">
+                        <p>5.33</p>
+                        <button class="song__button__3"><span class="play__button"><i class="fa-solid fa-circle-play fa-2xl" style="color: #000000;"></i></span></button>
+                    </div>
+                    
+                </div>
+
+
+
+                <div class="song4__div">
+                    <div class="song__image">
+                        <img src="./images/rahuljain.jpeg">
+                    </div>
+                    
+                    <audio id="song_4">
+                        <source src="./songs/song__4.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                    <div class="song__name__div">
+                        <p class="song__name">Tree Cieat</p>
+                    </div>
+                    
+                    <div class="duration__playbutton">
+                        <p>5.33</p>
+                        <button class="song__button__4"><span class="play__button"><i class="fa-solid fa-circle-play fa-2xl" style="color: #000000;"></i></span></button>
+                    </div>
+                    
+                </div>
+
+
+                <div class="song5__div">
+                    <div class="song__image">
+                        <img src="./images/rahuljain.jpeg">
+                    </div>
+                    
+                    <audio id="song_5">
+                        <source src="./songs/song__5.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                    <div class="song__name__div">
+                        <p class="song__name">Seao Phelona</p>
+                    </div>
+                    
+                    <div class="duration__playbutton">
+                        <p>5.33</p>
+                        <button class="song__button__5"><span class="play__button"><i class="fa-solid fa-circle-play fa-2xl" style="color: #000000;"></i></span></button>
+                    </div>
+                    
+                </div>
+
+
+                <div class="song6__div">
+                    <div class="song__image">
+                        <img src="./images/rahuljain.jpeg">
+                    </div>
+                    
+                    <audio id ="song_6" class="song__6">
+                        <source src="./songs/song__6.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                    <div class="song__name__div">
+                        <p class="song__name">Chaar Kadam</p>
+                    </div>
+                    
+                    <div class="duration__playbutton">
+                        <p>5.33</p>
+                        <button class="song__button__6"><span class="play__button"><i class="fa-solid fa-circle-play fa-2xl" style="color: #000000;"></i></span></button>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+
+        </section>
+    </main>
+</body>
+</html>
+
+
