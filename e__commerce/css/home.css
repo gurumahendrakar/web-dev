@@ -745,7 +745,7 @@ header{
     }
 
     .featured__products__container .cartoon__tshirt{
-        flex-basis: 100%;
+        flex-basis: 49%;
     }
     
     .nav__container :nth-child(2),.nav__container :nth-child(3),.nav__container :nth-child(4),.nav__container :nth-child(5),.nav__container :nth-child(6){
@@ -830,10 +830,31 @@ header{
 
 
 
-@media  screen and (max-width:280px){
+@media  screen and (max-width:350px){
 
     section{
         padding: 0;
     }
+
+    .featured__products__container .cartoon__tshirt{
+        flex-basis: 100%;
+    }
     
 }
+
+
+
+@media screen and (max-width:430px){
+    section{
+        padding: 0;
+    }
+
+    .section__6{
+        padding: 3rem;
+    }
+
+    .section__7{
+        padding: 3rem;
+    }
+} 
+    

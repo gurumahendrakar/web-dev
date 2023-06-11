@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    border: 5px solid yellowgreen;
+
+}
+
+.main > div{
+    width: 200px;
+    height: 200px;
+    background-color:greenyellow;
+  
+}
+
+.main1{
+    border: 5px solid red;
+}
+
+.main2{
+    position: relative;
+    
+    
+}
+
+.main3{
+    width: 100px;
+    height: 100px;
+    background: grey;
+    
+    position: absolute;
+    left: 50%;
+}

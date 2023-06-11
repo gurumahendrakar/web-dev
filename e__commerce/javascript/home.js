@@ -10,6 +10,21 @@ class apps{
         this.mobile_nav = $('.mobile__nav__container');
 
 
+        window.addEventListener('resize',function(){
+
+            let width = $('html').css('width')
+
+            if (width.slice(0,width.length-2)>650){
+                app.mobile_nav.css('display','none')
+                app.on.style.display = 'none'
+            }
+
+
+            else{
+                app.on.style.display = 'block'
+            } 
+        })
+
     }
 
 
@@ -31,12 +46,6 @@ class apps{
         
         
     }
-
-
-
-
-
-
 
 
 }
@@ -67,9 +76,33 @@ app.mobile_navEvent_adding();
 
 
 
-let data = fetch('https://jsonplaceholder.typicode.com/posts');
 
-data.then( async function(response){
-    data = await response.json();
-    console.log(data[0]);
-})
+// let neww = new Promise(function(resolve,reject){
+//     if (true){
+//         resolve('hlo world');
+//     }
+// })
+
+
+// neww.then(function(response){
+//     console.log(response);
+// })
+
+
+
+
+function sendEmail() {
+	Email.send({
+	Host: "smtp.gmail.com",
+	Username : "<sender’s email address>",
+	Password : "<email password>",
+	To : '<recipient’s email address>',
+	From : "<sender’s email address>",
+	Subject : "<email subject>",
+	Body : "<email body>",
+	}).then(
+		message => alert("mail sent successfully")
+	);
+}
+
+

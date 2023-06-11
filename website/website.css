@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Athiti&family=Be+Vietnam+Pro:wght@300;400&family=Didact+Gothic&family=Dongle:wght@300;400;700&family=Dosis&family=Exo&family=Nunito:ital,wght@0,700;0,800;1,700&family=Poppins:wght@300;400&family=Quicksand:wght@300&family=Rajdhani&family=Raleway:wght@200;300&family=Rubik:wght@300;400&family=Sen&family=Space+Grotesk:wght@300;400&family=VT323&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sen';
+    
+    
+}
+
+
+:root{
+    font-size: 62.5%;
+    --black:black;
+    --white : white;
+    --grey : rgb(162,162,162)
+
+}
+
+body{
+    background: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+.starting_animation{
+    display: flex;
+    flex-direction: column;
+}
+
+.owner__name__div{
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--black);
+    color: white;
+    padding: 5rem;
+    height: 100vh;
+    animation: owner__name__div2 2s;
+    animation-fill-mode: forwards;
+  
+
+  
+}
+
+
+.owner__namediv__movingup{
+    
+    width: 100%;
+    height: 0vh;
+    background: rgb(190, 255, 190);
+    color:var(--white);
+    position: absolute;
+    bottom: 0%;   
+}
+
+
+.loading__animation_div .__loading{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border : 0.2rem solid var(--black);
+    border-radius: 4rem;
+    border-top: 0.5rem solid var(--white);
+    border-bottom: 0.5rem solid var(--white);
+    animation: loading 0.3s;
+    animation-iteration-count: infinite;
+   
+}
+
+
+#creating__year{
+    display: block;
+}
+
+
+.designed__text__owner__name__div{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.owner__name{
+    font-size: 5rem;
+    position: relative;
+    left: 20%;
+    animation-name: owner__name;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}   
+
+.is__a{
+    position: relative;
+    left: 20%;
+    animation-name: owner__name;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes owner__name{
+    from{
+        
+        opacity: 0%;
+    }
+    
+    to{
+        left: 0%;
+    
+    }
+}
+
+
+@keyframes loading {
+    from{
+        
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+/* =============================HEADER STARTING===================================== */
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+   
+}
+
+
+.all__headercontent{
+    display: none;
+    background: var(--white);
+    width: 100%;
+    height: 0%;
+    bottom: 0;
+    position: absolute;
+}
+
+
+
+
+
+.nav__container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 1.5rem;
+    row-gap: 1rem;
+}
+
+
+.creative__header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+.creative__header .creative{
+    font-size: calc(10vw + 15px);
+    padding: 2rem;
+}
+
+
+.creative__header > p{
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: var(--grey);
+}
+
+.creative__header :nth-child(3){
+    padding: 1rem;
+}
+
+#freelance__worldwide{
+    display: block;
+}
+
+#GMT{
+    display: block;
+}
+
+
+.visual__designer__header{
+    display: flex;
+    justify-content: center;
+}
+
+
+.visual__designer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10vw);
+    width: 100%;
+}
+
+
+.visual{
+    display: inline-block;
+    overflow: hidden;
+    
+    
+ 
+}
+
+
+
+.images__div__header{
+    margin-top: 10rem;
+    display: flex;
+}
+
+
+.left__container{
+
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.left__container span{
+    display: block;
+ 
+
+}
+
+.left__container h2{
+    display: inline;
+
+    font-size: 2rem;
+    text-align: center;
+}
+
+.rightimage__container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 70%;
+    height: 60vw;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+
+
+
+.rightimage__container > div{
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    
+}
+
+
+.rightimage__container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    object-fit: cover;
+    filter: saturate(0);
+}
+
+
+.rightimage__container img:hover{
+    filter: saturate(1);
+}
+
+.rightimage__container .image__1{
+    top: 0rem;
+    left : 20%;
+    transform: rotate(-3deg);
+}
+
+.rightimage__container .image__2{
+    top: 10%;
+  
+}
+
+
+.rightimage__container .image__3{
+    margin-top: 20%;
+    margin-left: 20%;
+    transform: rotate(5deg);
+}
+
+
+
+
+
+
+@media screen and (max-width:850px) {
+    .images__div__header{
+        flex-direction: column;
+        row-gap: 5rem;
+      
+    }
+    
+    .left__container{
+        order: 2;
+    }
+
+    .rightimage__container{
+        display: flex;
+        position: relative;
+        flex-basis: auto;
+        align-items: center;
+        height: 100vh;
+    
+     
+    }
+
+
+    .rightimage__container img{
+        width: 100%;
+        height: 80%
+    }
+    
+    .rightimage__container > div{
+
+        padding: 2rem;
+        
+        width: 60%;
+        height: 90%;
+        position: absolute;
+
+        
+    }
+
+
+    .rightimage__container .image__1{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        left: 0;
+        transform: rotate(-3deg);
+        
+    }
+    
+    .rightimage__container .image__2{
+        display: flex;
+        align-items: end;
+       
+        margin: 0;
+        bottom: 0;
+        top: 0;
+     
+    }
+
+    .rightimage__container .image__3{
+        display: flex;
+        align-items: end;
+       
+        margin: 0;
+        right: 0;
+        bottom: 0;
+        
+       
+    }
+
+   
+    
+}

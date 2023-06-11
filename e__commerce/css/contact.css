@@ -1,0 +1,212 @@
+nav{
+    height: 10vh;
+}
+
+
+body{
+    
+}
+
+
+section{
+    padding: 0;
+}
+
+
+label{
+    display: inline-block;
+    
+    font-size: 2rem;
+;
+}
+nav{
+
+}
+
+.nav__container{
+    background: linear-gradient(rgb(255, 255, 255),rgb(255, 241, 241),rgb(255, 241, 244));
+    height: 10vh;
+}
+
+.section__1{
+    background: var(--website-color);
+    background: url(../images/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  
+}
+
+.contact__container{
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    
+    
+
+}
+
+
+.left__container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 40%;
+    background: white;
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+
+.right__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    
+}
+
+.firstname__lastname{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+}
+
+.firstname__lastname form{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+
+}
+
+
+
+
+.email__messege__addtion__details{
+    display: flex;
+    row-gap: 2rem;
+    flex-direction: column;
+}
+
+.email__messege__addtion__details form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.contact__information{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+    row-gap: 1rem;
+}
+
+
+.contact__information > div{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+
+.contact__container .right__container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 3rem;
+    row-gap: 1rem;
+}
+
+
+.right__container > div{
+    display: flex;
+    
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+
+.right__container span{
+    height: 0.2rem;
+    border: 1.5px solid rgb(215, 153, 153);
+}
+
+
+
+.left__container input[type="text"]{
+    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(207, 199, 199);
+    font-size: 2rem;
+    height: 4.5rem;
+    padding: 0.5rem;
+
+}
+
+
+input[type='email']{
+    border: 1.5px solid rgb(207, 199, 199);
+    height: 4.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    
+}
+
+
+textarea{
+    border: 1.5px solid rgb(207, 199, 199);
+    min-height: 20rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+
+.left__container button{
+    align-self: center;
+    padding: 1rem;
+}
+
+
+@media screen and (max-width:1400px){
+    .left__container,.right__container{
+        width: 50%;
+    }
+
+    
+}
+
+
+
+@media screen  and (max-width:1000px){
+
+    .contact__container{
+        flex-wrap: wrap;
+    }
+    .left__container{
+        width: 100%;
+    }
+
+
+    .right__container{
+        color:rgb(17, 9, 9);
+        align-self: flex-start;
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width:500px){
+
+    .contact__container{
+        padding: 2rem 0px 2rem 0px;
+    }
+
+    .left__container{
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    
+}
